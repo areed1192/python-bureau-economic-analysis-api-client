@@ -1,0 +1,804 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "DATASETNAME",
+                    "ParameterValue": "UNDERLYINGGDPBYINDUSTRY"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                },
+                {
+                    "ParameterName": "PARAMETERNAME",
+                    "ParameterValue": "INDUSTRY"
+                },
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETPARAMETERVALUES"
+                },
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "YOUR_API_KEY"
+                }
+            ]
+        },
+        "Results": {
+            "ParamValue": [
+                {
+                    "Key": "GDP",
+                    "Desc": "Gross domestic product"
+                },
+                {
+                    "Key": "II",
+                    "Desc": "All industries"
+                },
+                {
+                    "Key": "PVT",
+                    "Desc": "Private industries"
+                },
+                {
+                    "Key": "11",
+                    "Desc": "Agriculture, forestry, fishing, and hunting"
+                },
+                {
+                    "Key": "111CA",
+                    "Desc": "Farms"
+                },
+                {
+                    "Key": "111",
+                    "Desc": "Crop production"
+                },
+                {
+                    "Key": "112",
+                    "Desc": "Animal production and aquaculture"
+                },
+                {
+                    "Key": "113FF",
+                    "Desc": "Forestry, fishing, and related activities"
+                },
+                {
+                    "Key": "21",
+                    "Desc": "Mining"
+                },
+                {
+                    "Key": "211",
+                    "Desc": "Oil and gas extraction"
+                },
+                {
+                    "Key": "212",
+                    "Desc": "Mining, except oil and gas"
+                },
+                {
+                    "Key": "213",
+                    "Desc": "Support activities for mining"
+                },
+                {
+                    "Key": "22",
+                    "Desc": "Utilities"
+                },
+                {
+                    "Key": "2211",
+                    "Desc": "Electric power generation, transmission, and distribution"
+                },
+                {
+                    "Key": "2212NW",
+                    "Desc": "Natural gas distribution and water, sewage and other systems"
+                },
+                {
+                    "Key": "23",
+                    "Desc": "Construction"
+                },
+                {
+                    "Key": "23EH",
+                    "Desc": "Education, hospital, and health structures"
+                },
+                {
+                    "Key": "23MR",
+                    "Desc": "Maintenance and repair construction"
+                },
+                {
+                    "Key": "23OC",
+                    "Desc": "Office and commercial structures"
+                },
+                {
+                    "Key": "23OR",
+                    "Desc": "Other residential construction"
+                },
+                {
+                    "Key": "23OT",
+                    "Desc": "Other nonresidential structures"
+                },
+                {
+                    "Key": "23PC",
+                    "Desc": "Power and communication structures"
+                },
+                {
+                    "Key": "23SF",
+                    "Desc": "Single-family residential structures"
+                },
+                {
+                    "Key": "23TH",
+                    "Desc": "Transportation structures and highways and streets"
+                },
+                {
+                    "Key": "31G",
+                    "Desc": "Manufacturing"
+                },
+                {
+                    "Key": "33DG",
+                    "Desc": "Durable goods"
+                },
+                {
+                    "Key": "321",
+                    "Desc": "Wood products"
+                },
+                {
+                    "Key": "327",
+                    "Desc": "Nonmetallic mineral products"
+                },
+                {
+                    "Key": "331",
+                    "Desc": "Primary metals"
+                },
+                {
+                    "Key": "3311IS",
+                    "Desc": "Iron and steel mills and manufacturing from purchased steel"
+                },
+                {
+                    "Key": "3313NF",
+                    "Desc": "Nonferrous metal production and processing and foundries"
+                },
+                {
+                    "Key": "332",
+                    "Desc": "Fabricated metal products"
+                },
+                {
+                    "Key": "333",
+                    "Desc": "Machinery"
+                },
+                {
+                    "Key": "33311",
+                    "Desc": "Agricultural implement manufacturing"
+                },
+                {
+                    "Key": "33312",
+                    "Desc": "Construction machinery manufacturing"
+                },
+                {
+                    "Key": "33313",
+                    "Desc": "Mining and oil and gas field machinery manufacturing"
+                },
+                {
+                    "Key": "3332OM",
+                    "Desc": "Other machinery"
+                },
+                {
+                    "Key": "334",
+                    "Desc": "Computer and electronic products"
+                },
+                {
+                    "Key": "3341",
+                    "Desc": "Computer and peripheral equipment manufacturing"
+                },
+                {
+                    "Key": "3342",
+                    "Desc": "Communications equipment manufacturing"
+                },
+                {
+                    "Key": "3344",
+                    "Desc": "Semiconductor and other electronic component manufacturing"
+                },
+                {
+                    "Key": "3345",
+                    "Desc": "Navigational, measuring, electromedical, and control instruments manufacturing"
+                },
+                {
+                    "Key": "334X",
+                    "Desc": "Other computer and electronic product manufacturing"
+                },
+                {
+                    "Key": "335",
+                    "Desc": "Electrical equipment, appliances, and components"
+                },
+                {
+                    "Key": "3361MV",
+                    "Desc": "Motor vehicles, bodies and trailers, and parts"
+                },
+                {
+                    "Key": "336111",
+                    "Desc": "Automobile manufacturing"
+                },
+                {
+                    "Key": "336112",
+                    "Desc": "Light truck and utility vehicle manufacturing"
+                },
+                {
+                    "Key": "33612",
+                    "Desc": "Heavy duty truck manufacturing"
+                },
+                {
+                    "Key": "3362BP",
+                    "Desc": "Motor vehicle body, trailer, and parts manufacturing"
+                },
+                {
+                    "Key": "3364OT",
+                    "Desc": "Other transportation equipment"
+                },
+                {
+                    "Key": "3364",
+                    "Desc": "Aerospace product and parts manufacturing"
+                },
+                {
+                    "Key": "3365AO",
+                    "Desc": "All other transportation equipment manufacturing"
+                },
+                {
+                    "Key": "337",
+                    "Desc": "Furniture and related products"
+                },
+                {
+                    "Key": "339",
+                    "Desc": "Miscellaneous manufacturing"
+                },
+                {
+                    "Key": "3391",
+                    "Desc": "Medical equipment and supplies manufacturing"
+                },
+                {
+                    "Key": "3399",
+                    "Desc": "Other miscellaneous manufacturing"
+                },
+                {
+                    "Key": "31ND",
+                    "Desc": "Nondurable goods"
+                },
+                {
+                    "Key": "311FT",
+                    "Desc": "Food and beverage and tobacco products"
+                },
+                {
+                    "Key": "311",
+                    "Desc": "Food manufacturing"
+                },
+                {
+                    "Key": "3121",
+                    "Desc": "Beverage manufacturing"
+                },
+                {
+                    "Key": "3122",
+                    "Desc": "Tobacco product manufacturing"
+                },
+                {
+                    "Key": "313TT",
+                    "Desc": "Textile mills and textile product mills"
+                },
+                {
+                    "Key": "315AL",
+                    "Desc": "Apparel and leather and allied products"
+                },
+                {
+                    "Key": "322",
+                    "Desc": "Paper products"
+                },
+                {
+                    "Key": "323",
+                    "Desc": "Printing and related support activities"
+                },
+                {
+                    "Key": "324",
+                    "Desc": "Petroleum and coal products"
+                },
+                {
+                    "Key": "325",
+                    "Desc": "Chemical products"
+                },
+                {
+                    "Key": "3251",
+                    "Desc": "Basic chemical manufacturing"
+                },
+                {
+                    "Key": "3252",
+                    "Desc": "Resin, rubber, and artificial fibers manufacturing"
+                },
+                {
+                    "Key": "3254",
+                    "Desc": "Pharmaceutical and medicine manufacturing"
+                },
+                {
+                    "Key": "325X",
+                    "Desc": "Other chemical manufacturing"
+                },
+                {
+                    "Key": "326",
+                    "Desc": "Plastics and rubber products"
+                },
+                {
+                    "Key": "42",
+                    "Desc": "Wholesale trade"
+                },
+                {
+                    "Key": "4231",
+                    "Desc": "Motor vehicle and motor vehicle parts and supplies merchant wholesalers"
+                },
+                {
+                    "Key": "4234",
+                    "Desc": "Professional and commercial equipment and supplies merchant wholesalers"
+                },
+                {
+                    "Key": "4236",
+                    "Desc": "Household appliances and electrical and electronic goods merchant wholesalers"
+                },
+                {
+                    "Key": "4238",
+                    "Desc": "Machinery, equipment, and supplies merchant wholesalers"
+                },
+                {
+                    "Key": "423X",
+                    "Desc": "Other durable goods merchant wholesalers"
+                },
+                {
+                    "Key": "4242",
+                    "Desc": "Drugs and druggists sundries merchant wholesalers"
+                },
+                {
+                    "Key": "4244",
+                    "Desc": "Grocery and related products merchant wholesalers"
+                },
+                {
+                    "Key": "4247",
+                    "Desc": "Petroleum and petroleum products merchant wholesalers"
+                },
+                {
+                    "Key": "424X",
+                    "Desc": "Other nondurable goods merchant wholesalers"
+                },
+                {
+                    "Key": "425",
+                    "Desc": "Wholesale electronic markets and agents and brokers"
+                },
+                {
+                    "Key": "42ID",
+                    "Desc": "Customs duties"
+                },
+                {
+                    "Key": "44RT",
+                    "Desc": "Retail trade"
+                },
+                {
+                    "Key": "441",
+                    "Desc": "Motor vehicle and parts dealers"
+                },
+                {
+                    "Key": "445",
+                    "Desc": "Food and beverage stores"
+                },
+                {
+                    "Key": "452",
+                    "Desc": "General merchandise stores"
+                },
+                {
+                    "Key": "4A0",
+                    "Desc": "Other retail"
+                },
+                {
+                    "Key": "444",
+                    "Desc": "Building material and garden equipment and supplies dealers"
+                },
+                {
+                    "Key": "446",
+                    "Desc": "Health and personal care stores"
+                },
+                {
+                    "Key": "447",
+                    "Desc": "Gasoline stations"
+                },
+                {
+                    "Key": "448",
+                    "Desc": "Clothing and clothing accessories stores"
+                },
+                {
+                    "Key": "454",
+                    "Desc": "Nonstore retailers"
+                },
+                {
+                    "Key": "4A0X",
+                    "Desc": "All other retail"
+                },
+                {
+                    "Key": "48TW",
+                    "Desc": "Transportation and warehousing"
+                },
+                {
+                    "Key": "481",
+                    "Desc": "Air transportation"
+                },
+                {
+                    "Key": "482",
+                    "Desc": "Rail transportation"
+                },
+                {
+                    "Key": "483",
+                    "Desc": "Water transportation"
+                },
+                {
+                    "Key": "484",
+                    "Desc": "Truck transportation"
+                },
+                {
+                    "Key": "485",
+                    "Desc": "Transit and ground passenger transportation"
+                },
+                {
+                    "Key": "486",
+                    "Desc": "Pipeline transportation"
+                },
+                {
+                    "Key": "487OS",
+                    "Desc": "Other transportation and support activities"
+                },
+                {
+                    "Key": "48A",
+                    "Desc": "Scenic and sightseeing transportation and support activities"
+                },
+                {
+                    "Key": "492",
+                    "Desc": "Couriers and messengers"
+                },
+                {
+                    "Key": "493",
+                    "Desc": "Warehousing and storage"
+                },
+                {
+                    "Key": "51",
+                    "Desc": "Information"
+                },
+                {
+                    "Key": "511",
+                    "Desc": "Publishing industries, except internet (includes software)"
+                },
+                {
+                    "Key": "5111",
+                    "Desc": "Newspaper, periodical, book, and directory publishers"
+                },
+                {
+                    "Key": "5112",
+                    "Desc": "Software publishers"
+                },
+                {
+                    "Key": "512",
+                    "Desc": "Motion picture and sound recording industries"
+                },
+                {
+                    "Key": "513",
+                    "Desc": "Broadcasting and telecommunications"
+                },
+                {
+                    "Key": "515",
+                    "Desc": "Broadcasting (except Internet)"
+                },
+                {
+                    "Key": "5171",
+                    "Desc": "Wired telecommunications carriers"
+                },
+                {
+                    "Key": "5172",
+                    "Desc": "Wireless telecommunications carriers (except satellites)"
+                },
+                {
+                    "Key": "5174OT",
+                    "Desc": "Other telecommunications, including satellite"
+                },
+                {
+                    "Key": "514",
+                    "Desc": "Data processing, internet publishing, and other information services"
+                },
+                {
+                    "Key": "518",
+                    "Desc": "Data processing, hosting, and related services"
+                },
+                {
+                    "Key": "519",
+                    "Desc": "Other information services"
+                },
+                {
+                    "Key": "FIRE",
+                    "Desc": "Finance, insurance, real estate, rental, and leasing"
+                },
+                {
+                    "Key": "52",
+                    "Desc": "Finance and insurance"
+                },
+                {
+                    "Key": "521CI",
+                    "Desc": "Federal Reserve banks, credit intermediation, and related activities"
+                },
+                {
+                    "Key": "523",
+                    "Desc": "Securities, commodity contracts, and investments"
+                },
+                {
+                    "Key": "524",
+                    "Desc": "Insurance carriers and related activities"
+                },
+                {
+                    "Key": "524113",
+                    "Desc": "Direct life insurance carriers"
+                },
+                {
+                    "Key": "5241XX",
+                    "Desc": "Insurance carriers, except direct life insurance"
+                },
+                {
+                    "Key": "5242",
+                    "Desc": "Agencies, brokerages, and other insurance related activities"
+                },
+                {
+                    "Key": "525",
+                    "Desc": "Funds, trusts, and other financial vehicles"
+                },
+                {
+                    "Key": "53",
+                    "Desc": "Real estate and rental and leasing"
+                },
+                {
+                    "Key": "531",
+                    "Desc": "Real estate"
+                },
+                {
+                    "Key": "HS",
+                    "Desc": "Housing"
+                },
+                {
+                    "Key": "HSO",
+                    "Desc": "Owner-occupied housing"
+                },
+                {
+                    "Key": "HST",
+                    "Desc": "Tenant-occupied housing"
+                },
+                {
+                    "Key": "ORE",
+                    "Desc": "Other real estate"
+                },
+                {
+                    "Key": "532RL",
+                    "Desc": "Rental and leasing services and lessors of intangible assets"
+                },
+                {
+                    "Key": "PROF",
+                    "Desc": "Professional and business services"
+                },
+                {
+                    "Key": "54",
+                    "Desc": "Professional, scientific, and technical services"
+                },
+                {
+                    "Key": "5411",
+                    "Desc": "Legal services"
+                },
+                {
+                    "Key": "5415",
+                    "Desc": "Computer systems design and related services"
+                },
+                {
+                    "Key": "5412OP",
+                    "Desc": "Miscellaneous professional, scientific, and technical services"
+                },
+                {
+                    "Key": "5412",
+                    "Desc": "Accounting, tax preparation, bookkeeping, and payroll services"
+                },
+                {
+                    "Key": "5413",
+                    "Desc": "Architectural, engineering, and related services"
+                },
+                {
+                    "Key": "5416",
+                    "Desc": "Management, scientific, and technical consulting services"
+                },
+                {
+                    "Key": "5417",
+                    "Desc": "Scientific research and development services"
+                },
+                {
+                    "Key": "5418",
+                    "Desc": "Advertising, public relations, and related services"
+                },
+                {
+                    "Key": "541X",
+                    "Desc": "Specialized design services and other professional, scientific, and technical services"
+                },
+                {
+                    "Key": "55",
+                    "Desc": "Management of companies and enterprises"
+                },
+                {
+                    "Key": "56",
+                    "Desc": "Administrative and waste management services"
+                },
+                {
+                    "Key": "561",
+                    "Desc": "Administrative and support services"
+                },
+                {
+                    "Key": "5613",
+                    "Desc": "Employment services"
+                },
+                {
+                    "Key": "5617",
+                    "Desc": "Services to buildings and dwellings"
+                },
+                {
+                    "Key": "561X",
+                    "Desc": "Other administrative and support services"
+                },
+                {
+                    "Key": "562",
+                    "Desc": "Waste management and remediation services"
+                },
+                {
+                    "Key": "6",
+                    "Desc": "Educational services, health care, and social assistance"
+                },
+                {
+                    "Key": "61",
+                    "Desc": "Educational services"
+                },
+                {
+                    "Key": "62",
+                    "Desc": "Health care and social assistance"
+                },
+                {
+                    "Key": "621",
+                    "Desc": "Ambulatory health care services"
+                },
+                {
+                    "Key": "6211",
+                    "Desc": "Offices of physicians"
+                },
+                {
+                    "Key": "6212",
+                    "Desc": "Offices of dentists"
+                },
+                {
+                    "Key": "6213",
+                    "Desc": "Offices of other health practitioners"
+                },
+                {
+                    "Key": "6214",
+                    "Desc": "Outpatient care centers"
+                },
+                {
+                    "Key": "6215OH",
+                    "Desc": "Other ambulatory health care services"
+                },
+                {
+                    "Key": "622",
+                    "Desc": "Hospitals"
+                },
+                {
+                    "Key": "623",
+                    "Desc": "Nursing and residential care facilities"
+                },
+                {
+                    "Key": "624",
+                    "Desc": "Social assistance"
+                },
+                {
+                    "Key": "7",
+                    "Desc": "Arts, entertainment, recreation, accommodation, and food services"
+                },
+                {
+                    "Key": "71",
+                    "Desc": "Arts, entertainment, and recreation"
+                },
+                {
+                    "Key": "711AS",
+                    "Desc": "Performing arts, spectator sports, museums, and related activities"
+                },
+                {
+                    "Key": "713",
+                    "Desc": "Amusements, gambling, and recreation industries"
+                },
+                {
+                    "Key": "72",
+                    "Desc": "Accommodation and food services"
+                },
+                {
+                    "Key": "721",
+                    "Desc": "Accommodation"
+                },
+                {
+                    "Key": "722",
+                    "Desc": "Food services and drinking places"
+                },
+                {
+                    "Key": "81",
+                    "Desc": "Other services, except government"
+                },
+                {
+                    "Key": "811",
+                    "Desc": "Repair and maintenance"
+                },
+                {
+                    "Key": "812",
+                    "Desc": "Personal and laundry services"
+                },
+                {
+                    "Key": "813",
+                    "Desc": "Religious, grantmaking, civic, professional, and similar organizations"
+                },
+                {
+                    "Key": "814",
+                    "Desc": "Private households"
+                },
+                {
+                    "Key": "G",
+                    "Desc": "Government"
+                },
+                {
+                    "Key": "GF",
+                    "Desc": "Federal"
+                },
+                {
+                    "Key": "GFG",
+                    "Desc": "Federal general government"
+                },
+                {
+                    "Key": "GFGD",
+                    "Desc": "National defense"
+                },
+                {
+                    "Key": "GFGN",
+                    "Desc": "Nondefense"
+                },
+                {
+                    "Key": "GFE",
+                    "Desc": "Government enterprises"
+                },
+                {
+                    "Key": "GSL",
+                    "Desc": "State and local"
+                },
+                {
+                    "Key": "GSLG",
+                    "Desc": "State and local general government"
+                },
+                {
+                    "Key": "GSLGE",
+                    "Desc": "State and local government educational services"
+                },
+                {
+                    "Key": "GSLGH",
+                    "Desc": "State and local government hospitals and health services"
+                },
+                {
+                    "Key": "GSLGO",
+                    "Desc": "State and local government other services"
+                },
+                {
+                    "Key": "GSLE",
+                    "Desc": "Government enterprises"
+                },
+                {
+                    "Key": "NABI",
+                    "Desc": "Not allocated by industry"
+                },
+                {
+                    "Key": "PGOOD",
+                    "Desc": "Private goods-producing industries [1]"
+                },
+                {
+                    "Key": "PSERV",
+                    "Desc": "Private services-producing industries [2]"
+                },
+                {
+                    "Key": "ICT",
+                    "Desc": "Information-communications-technology-producing industries [3]"
+                }
+            ]
+        }
+    }
+}

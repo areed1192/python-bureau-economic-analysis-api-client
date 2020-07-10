@@ -1,0 +1,1268 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "YOUR_API_KEY"
+                },
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETDATA"
+                },
+                {
+                    "ParameterName": "FREQUENCY",
+                    "ParameterValue": "A"
+                },
+                {
+                    "ParameterName": "TABLEID",
+                    "ParameterValue": "ALL"
+                },
+                {
+                    "ParameterName": "INDUSTRY",
+                    "ParameterValue": "52"
+                },
+                {
+                    "ParameterName": "YEAR",
+                    "ParameterValue": "2019,2018"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                },
+                {
+                    "ParameterName": "DATASETNAME",
+                    "ParameterValue": "GDPBYINDUSTRY"
+                }
+            ]
+        },
+        "Results": {
+            "Statistic": "GDP by Industry Table",
+            "UTCProductionTime": "2020-07-10T19:20:00.590",
+            "Dimensions": [
+                {
+                    "Ordinal": "1",
+                    "Name": "TableID",
+                    "DataType": "numeric",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "2",
+                    "Name": "Frequency",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "3",
+                    "Name": "Year",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "4",
+                    "Name": "Quarter",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "5",
+                    "Name": "Industry",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "6",
+                    "Name": "IndustryDescription",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "7",
+                    "Name": "DataValue",
+                    "DataType": "numeric",
+                    "IsValue": "1"
+                }
+            ],
+            "Data": [
+                {
+                    "TableID": "1",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1567.3",
+                    "NoteRef": "1"
+                },
+                {
+                    "TableID": "1",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1627.9",
+                    "NoteRef": "1"
+                },
+                {
+                    "TableID": "5",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "7.6",
+                    "NoteRef": "5"
+                },
+                {
+                    "TableID": "5",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "7.6",
+                    "NoteRef": "5"
+                },
+                {
+                    "TableID": "6",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1567.3",
+                    "NoteRef": "6"
+                },
+                {
+                    "TableID": "6",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Compensation of employees",
+                    "DataValue": "816.8",
+                    "NoteRef": "6"
+                },
+                {
+                    "TableID": "6",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Taxes on production and imports less subsidies",
+                    "DataValue": "74.5",
+                    "NoteRef": "6"
+                },
+                {
+                    "TableID": "6",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Gross operating surplus",
+                    "DataValue": "676.0",
+                    "NoteRef": "6"
+                },
+                {
+                    "TableID": "7",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "100.0",
+                    "NoteRef": "7"
+                },
+                {
+                    "TableID": "7",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Compensation of employees",
+                    "DataValue": "52.1",
+                    "NoteRef": "7"
+                },
+                {
+                    "TableID": "7",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Taxes on production and imports less subsidies",
+                    "DataValue": "4.8",
+                    "NoteRef": "7"
+                },
+                {
+                    "TableID": "7",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Gross operating surplus",
+                    "DataValue": "43.1",
+                    "NoteRef": "7"
+                },
+                {
+                    "TableID": "8",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "100.201",
+                    "NoteRef": "8"
+                },
+                {
+                    "TableID": "8",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "103.544",
+                    "NoteRef": "8"
+                },
+                {
+                    "TableID": "9",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "-1.9",
+                    "NoteRef": "9"
+                },
+                {
+                    "TableID": "9",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "3.3",
+                    "NoteRef": "9"
+                },
+                {
+                    "TableID": "10",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1165.1",
+                    "NoteRef": "10"
+                },
+                {
+                    "TableID": "10",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1204.0",
+                    "NoteRef": "10"
+                },
+                {
+                    "TableID": "11",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "134.517",
+                    "NoteRef": "11"
+                },
+                {
+                    "TableID": "11",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "135.211",
+                    "NoteRef": "11"
+                },
+                {
+                    "TableID": "12",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "7.5",
+                    "NoteRef": "12"
+                },
+                {
+                    "TableID": "12",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "0.5",
+                    "NoteRef": "12"
+                },
+                {
+                    "TableID": "13",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "-0.15",
+                    "NoteRef": "13"
+                },
+                {
+                    "TableID": "13",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "0.25",
+                    "NoteRef": "13"
+                },
+                {
+                    "TableID": "14",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "0.56",
+                    "NoteRef": "14"
+                },
+                {
+                    "TableID": "14",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "0.04",
+                    "NoteRef": "14"
+                },
+                {
+                    "TableID": "15",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "3029.1",
+                    "NoteRef": "15"
+                },
+                {
+                    "TableID": "15",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "3160.6",
+                    "NoteRef": "15"
+                },
+                {
+                    "TableID": "16",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "113.952",
+                    "NoteRef": "16"
+                },
+                {
+                    "TableID": "16",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "117.883",
+                    "NoteRef": "16"
+                },
+                {
+                    "TableID": "17",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1.2",
+                    "NoteRef": "17"
+                },
+                {
+                    "TableID": "17",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "3.4",
+                    "NoteRef": "17"
+                },
+                {
+                    "TableID": "18",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "124.183",
+                    "NoteRef": "18"
+                },
+                {
+                    "TableID": "18",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "125.245",
+                    "NoteRef": "18"
+                },
+                {
+                    "TableID": "19",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "5.3",
+                    "NoteRef": "19"
+                },
+                {
+                    "TableID": "19",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "0.9",
+                    "NoteRef": "19"
+                },
+                {
+                    "TableID": "20",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1461.7",
+                    "NoteRef": "20"
+                },
+                {
+                    "TableID": "20",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1532.7",
+                    "NoteRef": "20"
+                },
+                {
+                    "TableID": "21",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "131.499",
+                    "NoteRef": "21"
+                },
+                {
+                    "TableID": "21",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "136.228",
+                    "NoteRef": "21"
+                },
+                {
+                    "TableID": "22",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "4.7",
+                    "NoteRef": "22"
+                },
+                {
+                    "TableID": "22",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "3.6",
+                    "NoteRef": "22"
+                },
+                {
+                    "TableID": "23",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "113.690",
+                    "NoteRef": "23"
+                },
+                {
+                    "TableID": "23",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "115.061",
+                    "NoteRef": "23"
+                },
+                {
+                    "TableID": "24",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "3.1",
+                    "NoteRef": "24"
+                },
+                {
+                    "TableID": "24",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1.2",
+                    "NoteRef": "24"
+                },
+                {
+                    "TableID": "208",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "2439.2",
+                    "NoteRef": "208"
+                },
+                {
+                    "TableID": "208",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "2523.3",
+                    "NoteRef": "208"
+                },
+                {
+                    "TableID": "209",
+                    "Frequency": "A",
+                    "Year": "2018",
+                    "Quarter": "2018",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1285.7",
+                    "NoteRef": "209"
+                },
+                {
+                    "TableID": "209",
+                    "Frequency": "A",
+                    "Year": "2019",
+                    "Quarter": "2019",
+                    "Industry": "52",
+                    "IndustrYDescription": "Finance and insurance",
+                    "DataValue": "1332.0",
+                    "NoteRef": "209"
+                }
+            ],
+            "Notes": [
+                {
+                    "NoteRef": "1.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "10.1.A,Q",
+                    "NoteText": "1. Chained (2012) dollar series are calculated as the product of the chain-type quantity index and the 2012 current-dollar value of the corresponding series, divided by 100. Because the formula for the chain-type quantity indexes uses weights of more than one period, the corresponding chained-dollar estimates are usually not additive. The value of the \"Not allocated by industry\" line reflects the difference between the first line and the sum of the most detailed lines, as well as the differences in source data used to estimate GDP by industry and the expenditures measure of real GDP."
+                },
+                {
+                    "NoteRef": "11.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "12.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "13.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "1",
+                    "NoteText": "Value Added by Industry [Billions of dollars]"
+                },
+                {
+                    "NoteRef": "14.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "15.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "16.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "17.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "18.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "19.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "20.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "208.1.A,Q",
+                    "NoteText": "1. Chained (2012) dollar series are calculated as the product of the chain-type quantity index and the 2012 current-dollar value of the corresponding series, divided by 100. Because the formula for the chain-type quantity indexes uses weights of more than one period, the corresponding chained-dollar estimates are usually not additive. The value of the \"Not allocated by industry\" line reflects the difference between the first line and the sum of the most detailed lines, as well as the differences in source data used to estimate GDP by industry and the expenditures measure of real GDP."
+                },
+                {
+                    "NoteRef": "209.1.A,Q",
+                    "NoteText": "1. Chained (2012) dollar series are calculated as the product of the chain-type quantity index and the 2012 current-dollar value of the corresponding series, divided by 100. Because the formula for the chain-type quantity indexes uses weights of more than one period, the corresponding chained-dollar estimates are usually not additive. The value of the \"Not allocated by industry\" line reflects the difference between the first line and the sum of the most detailed lines, as well as the differences in source data used to estimate GDP by industry and the expenditures measure of real GDP."
+                },
+                {
+                    "NoteRef": "21.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "22.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "23.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "24.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "25.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "26.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "27.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "29.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "30.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "31.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "32.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "33.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "34.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "35.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "36.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "37.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "38.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "39.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "40.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "41.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "42.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "5.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "6.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "7.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "8.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "9.1.A,Q",
+                    "NoteText": "1. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "9.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "8.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "7.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "6.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "5.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "42.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "41.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "40.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "39.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "38.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "37.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "36.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "35.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "34.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "33.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "32.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "31.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "30.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "29.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "27.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "26.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "25.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "24.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "23.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "22.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "21.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "209.2.A,Q",
+                    "NoteText": "2. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "208.2.A,Q",
+                    "NoteText": "2. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "20.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "19.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "18.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "17.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "16.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "15.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "14.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "13.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "12.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "11.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "10.2.A,Q",
+                    "NoteText": "2. Consists of agriculture, forestry, fishing, and hunting; mining; construction; and manufacturing."
+                },
+                {
+                    "NoteRef": "1.2.A,Q",
+                    "NoteText": "2. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "1.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "10.3.A,Q",
+                    "NoteText": "3. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "12.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "13.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "14.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "15.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "16.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "17.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "18.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "19.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "20.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "208.3.A,Q",
+                    "NoteText": "3. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "209.3.A,Q",
+                    "NoteText": "3. Consists of utilities; wholesale trade; retail trade; transportation and warehousing; information; finance, insurance, real estate, rental, and leasing; professional and business services; educational services, health care, and social assistance; arts, entertainment, recreation, accommodation, and food services; and other services, except government."
+                },
+                {
+                    "NoteRef": "21.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "22.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "23.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "24.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "25.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "26.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "27.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "29.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "30.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "31.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "32.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "33.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "34.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "35.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "36.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "37.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "38.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "39.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "40.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "41.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "42.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "5.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "6.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "7.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "8.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "9.3.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "29.0.A,Q",
+                    "NoteText": "Note. The percent changes for each industry group are shown in bold. Below each industry group, the percentage-point contributions of value added and of intermediate inputs to the percent change are shown; the percentage-point contributions of the components of intermediate inputs are also shown."
+                },
+                {
+                    "NoteRef": "30.0.A,Q",
+                    "NoteText": "Note. The percent changes for each industry group are shown in bold. Below each industry group, the percentage-point contributions of value added and of intermediate inputs to the percent change are shown; the percentage-point contributions of the components of intermediate inputs are also shown."
+                },
+                {
+                    "NoteRef": "5.0.A,Q",
+                    "NoteText": "Note. Detail may not add to total due to rounding."
+                },
+                {
+                    "NoteRef": "209.4.Q",
+                    "NoteText": "4. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "208.4.Q",
+                    "NoteText": "4. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "1.0.A,Q",
+                    "NoteText": "Note. Detail may not add to total due to rounding."
+                },
+                {
+                    "NoteRef": "13.0.A,Q",
+                    "NoteText": "Note. Percentage-point contributions do not sum to the percent change in real gross domestic product because the industry details are calculated using source data and methodologies that differ from those used to calculate growth in the top-line, expenditure-based measure of real GDP."
+                },
+                {
+                    "NoteRef": "14.0.A,Q",
+                    "NoteText": "Note. Percentage-point contributions do not sum to the percent change in the chain-type price index for gross domestic product because the industry details are calculated using source data and methodologies that differ from those used to calculate growth in the top-line, expenditure-based measure of GDP price growth."
+                },
+                {
+                    "NoteRef": "11.4.Q",
+                    "NoteText": "3. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "10.4.Q",
+                    "NoteText": "4. Consists of computer and electronic product manufacturing (excluding navigational, measuring, electromedical, and control instruments manufacturing); software publishers; broadcasting and telecommunications; data processing, hosting and related services; internet publishing and broadcasting and web search portals; and computer systems design and related services."
+                },
+                {
+                    "NoteRef": "5",
+                    "NoteText": "Value Added by Industry as a Percentage of Gross Domestic Product [Percent]"
+                },
+                {
+                    "NoteRef": "6",
+                    "NoteText": "Components of Value Added by Industry [Billions of dollars]"
+                },
+                {
+                    "NoteRef": "7",
+                    "NoteText": "Components of Value Added by Industry as a Percentage of Value Added [Percent]"
+                },
+                {
+                    "NoteRef": "8",
+                    "NoteText": "Chain-Type Quantity Indexes for Value Added by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "9",
+                    "NoteText": "Percent Changes in Chain-Type Quantity Indexes for Value Added by Industry [Percent change]"
+                },
+                {
+                    "NoteRef": "10",
+                    "NoteText": "Real Value Added by Industry [Billions of chained (2012) dollars]"
+                },
+                {
+                    "NoteRef": "11",
+                    "NoteText": "Chain-Type Price Indexes for Value Added by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "12",
+                    "NoteText": "Percent Changes in Chain-Type Price Indexes for Value Added by Industry [Percent change]"
+                },
+                {
+                    "NoteRef": "13",
+                    "NoteText": "Contributions to Percent Change in Real Gross Domestic Product by Industry [Percent and percentage points]"
+                },
+                {
+                    "NoteRef": "14",
+                    "NoteText": "Contributions to Percent Change in the Chain-Type Price Index for Gross Domestic Product by Industry [Percent and percentage points]"
+                },
+                {
+                    "NoteRef": "15",
+                    "NoteText": "Gross Output by Industry [Billions of dollars]"
+                },
+                {
+                    "NoteRef": "16",
+                    "NoteText": "Chain-Type Quantity Indexes for Gross Output by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "17",
+                    "NoteText": "Percent Changes in Chain-Type Quantity Indexes for Gross Output by Industry [Percent change]"
+                },
+                {
+                    "NoteRef": "18",
+                    "NoteText": "Chain-Type Price Indexes for Gross Output by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "19",
+                    "NoteText": "Percent Changes in Chain-Type Price Indexes for Gross Output by Industry [Percent change]"
+                },
+                {
+                    "NoteRef": "20",
+                    "NoteText": "Intermediate Inputs by Industry [Billions of dollars]"
+                },
+                {
+                    "NoteRef": "21",
+                    "NoteText": "Chain-Type Quantity Indexes for Intermediate Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "22",
+                    "NoteText": "Percent Changes in Chain-Type Quantity Indexes for Intermediate Inputs by Industry [Percent change]"
+                },
+                {
+                    "NoteRef": "23",
+                    "NoteText": "Chain-Type Price Indexes for Intermediate Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "24",
+                    "NoteText": "Percent Changes in Chain-Type Price Indexes for Intermediate Inputs by Industry [Percent change]"
+                },
+                {
+                    "NoteRef": "25",
+                    "NoteText": "Composition of Gross Output by Industry [Billions of Dollars]"
+                },
+                {
+                    "NoteRef": "26",
+                    "NoteText": "Shares of Gross Output by Industry [Percent]"
+                },
+                {
+                    "NoteRef": "27",
+                    "NoteText": "Cost per Unit of Real Gross Output by Industry Group "
+                },
+                {
+                    "NoteRef": "29",
+                    "NoteText": "Contributions to Percent Changes in Chain-Type Quantity Indexes for Gross Output by Industry Group [Percent and percentage points]"
+                },
+                {
+                    "NoteRef": "30",
+                    "NoteText": "Contributions to Percent Changes in Chain-Type Price Indexes for Gross Output by Industry Group [Percent and percentage points]"
+                },
+                {
+                    "NoteRef": "31",
+                    "NoteText": "Chain-Type Quantity Indexes for Energy Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "32",
+                    "NoteText": "Contributions to Percent Change by Industry in the Chain-Type Quantity Index for All Industries Energy Inputs "
+                },
+                {
+                    "NoteRef": "33",
+                    "NoteText": "Chain-Type Price Indexes for Energy Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "34",
+                    "NoteText": "Contributions to Percent Change by Industry in the Chain-Type Price Index for All Industries Energy Inputs "
+                },
+                {
+                    "NoteRef": "35",
+                    "NoteText": "Chain-Type Quantity Indexes for Materials Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "36",
+                    "NoteText": "Contributions to Percent Change by Industry in the Chain-Type Quantity Index for All Industries Materials Inputs "
+                },
+                {
+                    "NoteRef": "37",
+                    "NoteText": "Chain-Type Price Indexes for Materials Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "38",
+                    "NoteText": "Contributions to Percent Change by Industry in the Chain-Type Price Index for All Industries Materials Inputs "
+                },
+                {
+                    "NoteRef": "39",
+                    "NoteText": "Chain-Type Quantity Indexes for Purchased Service Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "40",
+                    "NoteText": "Contributions to Percent Change by Industry in the Chain-Type Quantity Index for All Industries Purchased Service Inputs "
+                },
+                {
+                    "NoteRef": "41",
+                    "NoteText": "Chain-Type Price Indexes for Purchased Service Inputs by Industry [2012=100]"
+                },
+                {
+                    "NoteRef": "42",
+                    "NoteText": "Contributions to Percent Change by Industry in the Chain-Type Price Index for All Industries Purchased Service Inputs "
+                },
+                {
+                    "NoteRef": "208",
+                    "NoteText": "Real Gross Output by industry [Billions of chained (2012) dollars]"
+                },
+                {
+                    "NoteRef": "209",
+                    "NoteText": "Real Intermediate Inputs by industry [Billions of chained (2012) dollars]"
+                }
+            ]
+        }
+    }
+}

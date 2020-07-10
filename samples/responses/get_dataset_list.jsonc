@@ -1,0 +1,72 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "YOUR_API_KEY"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                },
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETDATASETLIST"
+                }
+            ]
+        },
+        "Results": {
+            "Dataset": [
+                {
+                    "DatasetName": "NIPA",
+                    "DatasetDescription": "Standard NIPA tables"
+                },
+                {
+                    "DatasetName": "NIUnderlyingDetail",
+                    "DatasetDescription": "Standard NI underlying detail tables"
+                },
+                {
+                    "DatasetName": "MNE",
+                    "DatasetDescription": "Multinational Enterprises"
+                },
+                {
+                    "DatasetName": "FixedAssets",
+                    "DatasetDescription": "Standard Fixed Assets tables"
+                },
+                {
+                    "DatasetName": "ITA",
+                    "DatasetDescription": "International Transactions Accounts"
+                },
+                {
+                    "DatasetName": "IIP",
+                    "DatasetDescription": "International Investment Position"
+                },
+                {
+                    "DatasetName": "GDPbyIndustry",
+                    "DatasetDescription": "GDP by Industry"
+                },
+                {
+                    "DatasetName": "InputOutput",
+                    "DatasetDescription": "Input-Output Data"
+                },
+                {
+                    "DatasetName": "UnderlyingGDPbyIndustry",
+                    "DatasetDescription": "Underlying GDP by Industry"
+                },
+                {
+                    "DatasetName": "IntlServTrade",
+                    "DatasetDescription": "International Services Trade"
+                },
+                {
+                    "DatasetName": "Regional",
+                    "DatasetDescription": "Regional data sets"
+                },
+                {
+                    "DatasetName": "APIDatasetMetaData",
+                    "DatasetDescription": "Metadata about other API datasets"
+                }
+            ]
+        }
+    }
+}

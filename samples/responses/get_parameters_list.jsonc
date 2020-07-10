@@ -1,0 +1,58 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETPARAMETERLIST"
+                },
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "YOUR_API_KEY"
+                },
+                {
+                    "ParameterName": "DATASETNAME",
+                    "ParameterValue": "REGIONAL"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                }
+            ]
+        },
+        "Results": {
+            "Parameter": [
+                {
+                    "ParameterName": "GeoFips",
+                    "ParameterDataType": "string",
+                    "ParameterDescription": "Comma-delimited list of 5-character geographic codes; COUNTY for all counties, STATE for all states, MSA for all MSAs, MIC for all Micropolitan Areas, PORT for all state metro/nonmetro portions, DIV for all Metropolitan Divisions, CSA for all Combined Statistical Areas, state post office abbreviation for all counties in one state (e.g. NY)",
+                    "ParameterIsRequiredFlag": "1",
+                    "MultipleAcceptedFlag": "1"
+                },
+                {
+                    "ParameterName": "LineCode",
+                    "ParameterDataType": "integer",
+                    "ParameterDescription": "Line code for a statistic or industry",
+                    "ParameterIsRequiredFlag": "1",
+                    "MultipleAcceptedFlag": "0"
+                },
+                {
+                    "ParameterName": "TableName",
+                    "ParameterDataType": "string",
+                    "ParameterDescription": "Regional income or product table to retrieve",
+                    "ParameterIsRequiredFlag": "1",
+                    "ParameterDefaultValue": "",
+                    "MultipleAcceptedFlag": "0"
+                },
+                {
+                    "ParameterName": "Year",
+                    "ParameterDataType": "string",
+                    "ParameterDescription": "Comma-delimted list of years; LAST5 for latest 5 years; LAST10 for latest 10 years; ALL for all years",
+                    "ParameterIsRequiredFlag": "0",
+                    "ParameterDefaultValue": "LAST5",
+                    "MultipleAcceptedFlag": "1"
+                }
+            ]
+        }
+    }
+}
