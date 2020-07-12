@@ -1,0 +1,327 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETDATA"
+                },
+                {
+                    "ParameterName": "YEAR",
+                    "ParameterValue": "ALL"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                },
+                {
+                    "ParameterName": "FREQUENCY",
+                    "ParameterValue": "A"
+                },
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "YOUR_API_KEY"
+                },
+                {
+                    "ParameterName": "TYPEOFINVESTMENT",
+                    "ParameterValue": "FINASSETSEXCLFINDERIV"
+                },
+                {
+                    "ParameterName": "COMPONENT",
+                    "ParameterValue": "CHGPOSPRICE"
+                },
+                {
+                    "ParameterName": "DATASETNAME",
+                    "ParameterValue": "IIP"
+                }
+            ]
+        },
+        "Results": {
+            "Dimensions": [
+                {
+                    "Ordinal": "1",
+                    "Name": "TypeOfInvestment",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "2",
+                    "Name": "Component",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "4",
+                    "Name": "Frequency",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "5",
+                    "Name": "Year",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "6",
+                    "Name": "TimeSeriesId",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "7",
+                    "Name": "TimeSeriesDescription",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "8",
+                    "Name": "TimePeriod",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "9",
+                    "Name": "CL_UNIT",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "10",
+                    "Name": "UNIT_MULT",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "11",
+                    "Name": "DataValue",
+                    "DataType": "numeric",
+                    "IsValue": "1"
+                }
+            ]
+        },
+        "Data": [
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2003",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2003",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "767451",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2004",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2004",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "468623",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2005",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2005",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "1079110",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2006",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2006",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "1111577",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2007",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2007",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "559376",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2008",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2008",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "-4329718",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2009",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2009",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "1869617",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2010",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2010",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "891472",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2011",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2011",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "-1259746",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2012",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2012",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "1176447",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2013",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2013",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "1694780",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2014",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2014",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "655022",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2015",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2015",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "192241",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2016",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2016",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "834575",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2017",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2017",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "1809392",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2018",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2018",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "-2122412",
+                "NoteRef": ""
+            },
+            {
+                "TypeOfInvestment": "FinAssetsExclFinDeriv",
+                "Component": "ChgPosPrice",
+                "Frequency": "A",
+                "Year": "2019",
+                "TimeSeriesId": "TSI_IipFinAssetsExclFinDerivChgPosPrice_A",
+                "TimeSeriesDescription": "U.S. assets excluding financial derivatives (Change in position attributable to price changes); annual",
+                "TimePeriod": "2019",
+                "CL_UNIT": "USD",
+                "UNIT_MULT": "6",
+                "DataValue": "3080131",
+                "NoteRef": ""
+            }
+        ]
+    }
+}

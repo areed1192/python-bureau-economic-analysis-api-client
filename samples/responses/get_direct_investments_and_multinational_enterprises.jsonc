@@ -1,0 +1,280 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "SERIESID",
+                    "ParameterValue": "30"
+                },
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "YOUR_API_KEY"
+                },
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETDATA"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                },
+                {
+                    "ParameterName": "YEAR",
+                    "ParameterValue": "2011,2012"
+                },
+                {
+                    "ParameterName": "GETFOOTNOTES",
+                    "ParameterValue": "YES"
+                },
+                {
+                    "ParameterName": "INDUSTRY",
+                    "ParameterValue": "ALL"
+                },
+                {
+                    "ParameterName": "COUNTRY",
+                    "ParameterValue": "650,699"
+                },
+                {
+                    "ParameterName": "DATASETNAME",
+                    "ParameterValue": "MNE"
+                },
+                {
+                    "ParameterName": "DIRECTIONOFINVESTMENT",
+                    "ParameterValue": "OUTWARD"
+                },
+                {
+                    "ParameterName": "CLASSIFICATION",
+                    "ParameterValue": "COUNTRY"
+                },
+                {
+                    "ParameterName": "NonbankAffiliatesOnly",
+                    "ParameterValue": "2"
+                },
+                {
+                    "ParameterName": "OwnershipLevel",
+                    "ParameterValue": "2"
+                }
+            ]
+        },
+        "Results": {
+            "Table_Count": "1",
+            "rowTypeID": "10",
+            "InvestmentType": "U.S. Direct Investment Abroad",
+            "DataType": "Balance of Payments and Direct Investment Position Data",
+            "Entity": "None",
+            "IndustryClassification": "NAICS",
+            "YearList": "2011,2012",
+            "DIRECTIONOFINVESTMENT": "OUTWARD",
+            "OwnershipLevel": "2",
+            "NonbankAffiliatesOnly": "2",
+            "Tables": "211",
+            "cnt": "4",
+            "Dimensions": [
+                {
+                    "Ordinal": "1",
+                    "Name": "Year",
+                    "DataType": "numeric",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "2",
+                    "Name": "SeriesID",
+                    "DataType": "numeric",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "3",
+                    "Name": "SeriesName",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "4",
+                    "Name": "Row",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "5",
+                    "Name": "Column",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "6",
+                    "Name": "RowCode",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "7",
+                    "Name": "ColumnCode",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "8",
+                    "Name": "TableScale",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "9",
+                    "Name": "DataValueUnformatted",
+                    "DataType": "string",
+                    "IsValue": "1"
+                },
+                {
+                    "Ordinal": "10",
+                    "Name": "DataValue",
+                    "DataType": "string",
+                    "IsValue": "1"
+                }
+            ],
+            "Data": [
+                {
+                    "Year": "2011",
+                    "SeriesID": "30",
+                    "SeriesName": "U.S. Direct Investment Position Abroad on a Historical-Cost Basis",
+                    "Row": "Asia and Pacific",
+                    "ColumnGParent": "None",
+                    "ColumnParent": "None",
+                    "Column": "Position",
+                    "RowCode": "699",
+                    "ColumnCode": "0000",
+                    "ColumnParentCode": "0",
+                    "ColumnGParentCode": "0",
+                    "TableScale": "Millions of Dollars",
+                    "DataValueUnformatted": "591657",
+                    "TableColumnDisplayOrder": "1.00",
+                    "TableRowDisplayOrder": "192.00",
+                    "DataValue": "591,657"
+                },
+                {
+                    "Year": "2012",
+                    "SeriesID": "30",
+                    "SeriesName": "U.S. Direct Investment Position Abroad on a Historical-Cost Basis",
+                    "Row": "Asia and Pacific",
+                    "ColumnGParent": "None",
+                    "ColumnParent": "None",
+                    "Column": "Position",
+                    "RowCode": "699",
+                    "ColumnCode": "0000",
+                    "ColumnParentCode": "0",
+                    "ColumnGParentCode": "0",
+                    "TableScale": "Millions of Dollars",
+                    "DataValueUnformatted": "672777",
+                    "TableColumnDisplayOrder": "1.00",
+                    "TableRowDisplayOrder": "192.00",
+                    "DataValue": "672,777"
+                },
+                {
+                    "Year": "2011",
+                    "SeriesID": "30",
+                    "SeriesName": "U.S. Direct Investment Position Abroad on a Historical-Cost Basis",
+                    "Row": "China",
+                    "ColumnGParent": "None",
+                    "ColumnParent": "None",
+                    "Column": "Position",
+                    "RowCode": "650",
+                    "ColumnCode": "0000",
+                    "ColumnParentCode": "0",
+                    "ColumnGParentCode": "0",
+                    "TableScale": "Millions of Dollars",
+                    "DataValueUnformatted": "53661",
+                    "TableColumnDisplayOrder": "1.00",
+                    "TableRowDisplayOrder": "194.00",
+                    "DataValue": "53,661"
+                },
+                {
+                    "Year": "2012",
+                    "SeriesID": "30",
+                    "SeriesName": "U.S. Direct Investment Position Abroad on a Historical-Cost Basis",
+                    "Row": "China",
+                    "ColumnGParent": "None",
+                    "ColumnParent": "None",
+                    "Column": "Position",
+                    "RowCode": "650",
+                    "ColumnCode": "0000",
+                    "ColumnParentCode": "0",
+                    "ColumnGParentCode": "0",
+                    "TableScale": "Millions of Dollars",
+                    "DataValueUnformatted": "54514",
+                    "TableColumnDisplayOrder": "1.00",
+                    "TableRowDisplayOrder": "194.00",
+                    "DataValue": "54,514"
+                }
+            ],
+            "Notes": [
+                {
+                    "NoteText": "<strong>n.s.</strong>  Not shown.  Data may not be shown for several reasons:",
+                    "NoteRef": "2.00"
+                },
+                {
+                    "NoteText": "? The data appear on another line in this table.",
+                    "NoteRef": "4.00"
+                },
+                {
+                    "NoteText": "? The data are not shown in this table but may be available in detailed country- or industry-level tables in this interactive system or in other BEA published tables on direct investment.",
+                    "NoteRef": "6.00"
+                },
+                {
+                    "NoteText": "? The data are not available, do not apply, or are not defined.",
+                    "NoteRef": "8.00"
+                },
+                {
+                    "NoteText": "<strong>(*)</strong> A nonzero value that rounds to zero.",
+                    "NoteRef": "10.00"
+                },
+                {
+                    "NoteText": "<strong>(D)</strong> indicates that the data in the cell have been suppressed to avoid disclosure of data of individual companies.",
+                    "NoteRef": "12.00"
+                },
+                {
+                    "NoteText": "Balance of payments transactions (and associated positions) between parents and affiliates are recorded against the country of the foreign affiliate with which the U.S. parent had a direct transaction, even if the transaction may reflect indirect claims on, liabilities to, or income from indirectly held affiliates in third countries.  For years prior to 1999, the \"<em>International</em>\" category consists of affiliates that have operations spanning more than one country and that are engaged in petroleum shipping, other water transportation, or offshore oil and gas drilling.  Beginning with the data for 1999, data for such affiliates are classified in the country of residence of the operator of the ship or equipment.",
+                    "NoteRef": "34.00"
+                },
+                {
+                    "NoteText": "The composition of the \"Other\" categories shown in this table may change from one year to another.  For a geographic area, \"Other\" is a residual that shows a total for all countries not shown separately under that area.  Because the countries shown separately may change over time as the composition of direct investment changes, data for a particular country may be included in an \"Other\" total in one year but excluded from it in another year.  Changes in the countries shown separately generally take place in years covered by benchmark surveys (or censuses) of direct investment, which usually are conducted once every five years.",
+                    "NoteRef": "36.00"
+                },
+                {
+                    "NoteText": "Source: U.S. Bureau of Economic Analysis ",
+                    "NoteRef": "41.00"
+                },
+                {
+                    "NoteText": "1. In 2015, the euro area includes Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia and Spain.  For 2015, the U.S. direct investment position in the euro area was $2,018,316 million.",
+                    "NoteRef": "112.01"
+                },
+                {
+                    "NoteText": "1. In 2015, the euro area includes Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia and Spain.  For 2015, the U.S. direct investment position in the euro area was $2,018,316 million; financial transactions without current-cost adjustment were $146,027 million; and direct investment income without current-cost adjustment was $163,953 million.",
+                    "NoteRef": "221.00"
+                },
+                {
+                    "NoteText": "2. The ?United Kingdom Islands, Caribbean? includes British Virgin Islands, Cayman Islands, Montserrat, and Turks and Caicos Islands.",
+                    "NoteRef": "222.00"
+                },
+                {
+                    "NoteText": "3. Prior to 2011, data were included in the Netherlands Antilles.",
+                    "NoteRef": "223.00"
+                },
+                {
+                    "NoteText": "4. Prior to 2011, included data for Curacao, Sint Maarten, and the Netherlands Islands, Caribbean (Bonaire, Saba, and St. Eustatius).",
+                    "NoteRef": "224.00"
+                },
+                {
+                    "NoteText": "5. Prior to 2011, included data for South Sudan.",
+                    "NoteRef": "225.00"
+                },
+                {
+                    "NoteText": "2. OPEC (Organization of Petroleum Exporting Countries): data for this group reflects the OPEC membership during the reference period.",
+                    "NoteRef": "226.00"
+                },
+                {
+                    "NoteText": "If you have a question about the availability of data, E-mail your question to <a href=\"mailto:internationalaccounts@bea.gov\">internationalaccounts@bea.gov</a>",
+                    "NoteRef": "10000.00"
+                }
+            ]
+        }
+    }
+}

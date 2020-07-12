@@ -32,16 +32,10 @@ Here is a simple example of using the `pybea` library to grab a list of the diff
 
 ```python
 from pprint import pprint
-from configparser import ConfigParser
 from pybea.client import BureauEconomicAnalysisClient
 
-# Grab configuration values.
-config = ConfigParser()
-config.read('configs/config.ini')
-API_KEY = config.get('alex_credentials', 'API_KEY')
-
 # Initalize the new Client.
-bea_client = BureauEconomicAnalysisClient(api_key=API_KEY)
+bea_client = BureauEconomicAnalysisClient(api_key='YOUR_API_KEY_HERE')
 
 # Grab the Dataset List.
 dataset_list = bea_client.get_dataset_list()
@@ -52,42 +46,39 @@ You will note the output of the above code would look like the following:
 
 ```json
 {
-    "BEAAPI": {
-        "Request": {
-            "RequestParam": [
-                {
-                    "ParameterName": "METHOD",
-                    "ParameterValue": "GETPARAMETERLIST"
-                },
-                ...
-                {
-                    "ParameterName": "RESULTFORMAT",
-                    "ParameterValue": "JSON"
-                }
-            ]
+  "BEAAPI": {
+    "Request": {
+      "RequestParam": [
+        {
+          "ParameterName": "METHOD",
+          "ParameterValue": "GETPARAMETERLIST"
         },
-        "Results": {
-            "Parameter": [
-                {
-                    "ParameterName": "GeoFips",
-                    "ParameterDataType": "string",
-                    "ParameterDescription": "Comma-delimited list of 5-character geographic codes; COUNTY for all counties, STATE for all states, MSA for all MSAs, MIC for all Micropolitan Areas, PORT for all state metro/nonmetro portions, DIV for all Metropolitan Divisions, CSA for all Combined Statistical Areas, state post office abbreviation for all counties in one state (e.g. NY)",
-                    "ParameterIsRequiredFlag": "1",
-                    "MultipleAcceptedFlag": "1"
-                }
-                ...
-                ,
-                {
-                    "ParameterName": "Year",
-                    "ParameterDataType": "string",
-                    "ParameterDescription": "Comma-delimted list of years; LAST5 for latest 5 years; LAST10 for latest 10 years; ALL for all years",
-                    "ParameterIsRequiredFlag": "0",
-                    "ParameterDefaultValue": "LAST5",
-                    "MultipleAcceptedFlag": "1"
-                }
-            ]
+        {
+          "ParameterName": "RESULTFORMAT",
+          "ParameterValue": "JSON"
         }
+      ]
+    },
+    "Results": {
+      "Parameter": [
+        {
+          "ParameterName": "GeoFips",
+          "ParameterDataType": "string",
+          "ParameterDescription": "Comma-delimited list of 5-character geographic codes; COUNTY for all counties, STATE for all states, MSA for all MSAs, MIC for all Micropolitan Areas, PORT for all state metro/nonmetro portions, DIV for all Metropolitan Divisions, CSA for all Combined Statistical Areas, state post office abbreviation for all counties in one state (e.g. NY)",
+          "ParameterIsRequiredFlag": "1",
+          "MultipleAcceptedFlag": "1"
+        },
+        {
+          "ParameterName": "Year",
+          "ParameterDataType": "string",
+          "ParameterDescription": "Comma-delimted list of years; LAST5 for latest 5 years; LAST10 for latest 10 years; ALL for all years",
+          "ParameterIsRequiredFlag": "0",
+          "ParameterDefaultValue": "LAST5",
+          "MultipleAcceptedFlag": "1"
+        }
+      ]
     }
+  }
 }
 ```
 
