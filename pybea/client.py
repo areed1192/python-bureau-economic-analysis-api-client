@@ -208,7 +208,7 @@ class BureauEconomicAnalysisClient():
 
         Example URL:
         ----
-        https://apps.bea.gov/api/data/?&UserID={YOUR_API_KEY}&method=GetData&DataSetName=underlyingGDPbyIndustry&Year=2012&Industry=ALL&tableID=1&Frequency=Q&ResultFormat=JSON
+        https://apps.bea.gov/api/data/?&UserID={YOUR_API_KEY}&method=GetData&DataSetName=GDPbyIndustry&Year=2012&Industry=ALL&tableID=1&Frequency=Q&ResultFormat=JSON
 
         Usage:
         ----
@@ -239,6 +239,167 @@ class BureauEconomicAnalysisClient():
             'industry': industry,
             'frequency': frequency,
             'tableid': table_id
+        }
+
+        # Make the request.
+        response = self._make_request(
+            method='get',
+            params=params
+        )
+
+        return response
+
+    def underlying_gdp_by_industry(self, year: List[str] = 'ALL', industry: List[str] = 'ALL', frequency: str = 'A,Q,M', table_id: List[str] = 'ALL') -> Dict:
+        """The underlying gross domestic product by industry data are contained within a dataset called UnderlyingGDPbyIndustry.
+
+        Overview:
+        ----
+        BEA's industry accounts are used extensively by policymakers and businesses to understand industry interactions,
+        productivity trends, and the changing structure of the U.S. economy. The underlying GDP-by-industry dataset includes data
+        in both current and chained (real) dollars. The dataset contains estimates for value added, gross output, and intermediate
+        input statistics. This dataset is structurally similar to the GDPbyIndustry dataset (Appendix F), but contains additional
+        industry detail.
+
+        Arguments:
+        ----
+        year (List[str], optional): List of year(s) of data to retrieve (ALL for All). Defaults to 'ALL'.
+
+        industry (List[str], optional): List of industries to retrieve (ALL for All). Defaults to 'ALL'.
+
+        frequency (str, optional): `Q` for Quarterly data or `A` for Annual, `A,Q` for both. Defaults to 'A,Q'.
+
+        table_id (List[str], optional): The unique GDP by Industry table identifier (ALL for All). Defaults to 'ALL'.
+
+        Returns:
+        ----
+        Dict: A list of GDP figures for the industry specified.
+
+        Example URL:
+        ----
+        https://apps.bea.gov/api/data/?&UserID={YOUR_API_KEY}&method=GetData&DataSetName=underlyingGDPbyIndustry&Year=2013,2012&Industry=ALL&tableID=1&Frequency=Q&ResultFormat=JSON
+
+        Usage:
+        ----
+            >>> # Initalize the new Client.
+            >>> bea_client = BureauEconomicAnalysisClient(api_key=API_KEY)
+
+            >>> # Quarterly Value Added by Industry data for all industries for years 2012 and 2013.
+            >>> underlying_gdp_by_industry = bea_client.underlying_gdp_by_industry(
+                industry='ALL',
+                frequency=['Q'],
+                year=['2012', '2013'],
+                table_id='ALL'
+            )
+            >>> underlying_gdp_by_industry
+        """
+
+        if year != 'ALL':
+            year = ','.join(year)
+
+        # Define the parameters.
+        params = {
+            'userid': self.api_key,
+            'method': 'GetData',
+            'datasetname': 'underlyingGDPbyIndustry',
+            'year': year,
+            'resultformat': self._format,
+            'industry': industry,
+            'frequency': frequency,
+            'tableid': table_id
+        }
+
+        # Make the request.
+        response = self._make_request(
+            method='get',
+            params=params
+        )
+
+        return response
+
+    def international_trade_services(self, type_of_service: str = 'ALL', trade_direction: List[str] = 'ALL', affiliation: List[str] = 'ALL',
+                                     year: List[str] = 'ALL', area_or_country: List[str] = 'AllCountries') -> Dict:
+        """This dataset contains annual data on U.S. international trade in services.
+
+        Overview:
+        ----
+        These data are updated each October to reflect the International Transactions Accounts annual update released
+        in June. BEA's statistics on services supplied through affiliates by multinational enterprises are not included in
+        this dataset.
+
+        Arguments:
+        ----
+        type_of_service (List[str], optional): The TypeOfService parameter specifies the type of service being traded (e.g. travel, transport, or insurance
+            services). Exactly one TypeOfService parameter value other than “All” must be provided in all data requests unless exactly
+            one AreaOrCountry parameter value other than “All” is requested. That is, multiple Indicators can only be
+            specified if a single AreaOrCountry parameter is specified. Defaults to 'ALL'.
+
+        trade_direction (List[str], optional): The TradeDirection parameter specifies the trade direction of the services 
+            transactions. There are four valid parameter values other than “All”:
+
+                1. Exports – Exports
+                2. Imports – Imports
+                3. Balance – Balance (exports less imports)
+                4. SupplementalIns – Supplemental detail on insurance transactions. 
+
+            Defaults to 'ALL'.
+
+        affiliation (str, optional): The Affiliation parameter specifies the trade direction for the services 
+            transactions. There are five valid parameter values other than “All”:
+
+                1. AllAffiliations – The total for all trade, whether affiliated or unaffiliated.
+                2. Unaffiliated – Unaffiliated trade.
+                3. Affiliated – Affiliated trade.
+                4. UsParents – U.S. parents’ trade with their foreign affiliates.
+                5. UsAffiliates – U.S. affiliates’ trade with their foreign parent groups.
+
+            Defaults to 'ALL'.
+
+        year (List[str], optional): List of year(s) of data to retrieve (ALL for All). Defaults to 'ALL'.
+
+        area_or_country (List[str], optional): The AreaOrCountry parameter specifies the counterparty area or country 
+            of the services transactions. The default parameter value (“AllCountries”) returns the total for all countries,
+            while “All” returns all data available by area and country. Exactly one AreaOrCountry parameter value must be 
+            provided in all data requests unless exactly one TypeOfService parameter value other than “All” is requested. 
+            That is, a list of countries can only be specified if a single TypeOfService is specified. Defaults to 'AllCountries'.
+
+        Returns:
+        ----
+        Dict: A list of international trade services.
+
+        Example URL:
+        ----
+        https://apps.bea.gov/api/data/?&UserID={YOUR_API_KEY}&method=GetData&DataSetName=IntlServTrade&TypeOfService=AllServiceTypes&TradeDirection=Imports&Affiliation=AllAffiliations&AreaOrCountry=Germany&Year=2014,2015&ResultFormat=JSON
+
+        Usage:
+        ----
+            >>> # Initalize the new Client.
+            >>> bea_client = BureauEconomicAnalysisClient(api_key=API_KEY)
+
+            >>> # Imports of services from Germany for 2014 and 2015.
+            >>> international_trade_services = bea_client.international_trade_services(
+                type_of_service='AllServiceTypes',
+                trade_direction=['Imports'],
+                year=['2014', '2015'],
+                affiliation=['AllAffiliations'],
+                area_or_country=['Germany']
+            )
+            >>> international_trade_services
+        """
+
+        if year != 'ALL':
+            year = ','.join(year)
+
+        # Define the parameters.
+        params = {
+            'userid': self.api_key,
+            'method': 'GetData',
+            'datasetname': 'IntlServTrade',
+            'year': year,
+            'resultformat': self._format,
+            'typeofservice': type_of_service,
+            'tradedirection': trade_direction,
+            'affiliation': affiliation,
+            'areaorcountry': area_or_country
         }
 
         # Make the request.
@@ -803,7 +964,7 @@ class BureauEconomicAnalysisClient():
         Example URL:
         ----
         https://apps.bea.gov/api/data/?&UserID={YOUR_API_KEY}&method=GetData&DataSetName=InputOutput&Year=2010,2011,2012,2013&tableID=56&ResultFormat=JSON
-        
+
         Usage:
         ----
             >>> # Initalize the new Client.

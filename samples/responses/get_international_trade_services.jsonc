@@ -1,0 +1,117 @@
+{
+    "BEAAPI": {
+        "Request": {
+            "RequestParam": [
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETDATA"
+                },
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "YOUR_API_KEY"
+                },
+                {
+                    "ParameterName": "AFFILIATION",
+                    "ParameterValue": "ALLAFFILIATIONS"
+                },
+                {
+                    "ParameterName": "DATASETNAME",
+                    "ParameterValue": "INTLSERVTRADE"
+                },
+                {
+                    "ParameterName": "AREAORCOUNTRY",
+                    "ParameterValue": "GERMANY"
+                },
+                {
+                    "ParameterName": "YEAR",
+                    "ParameterValue": "2014,2015"
+                },
+                {
+                    "ParameterName": "RESULTFORMAT",
+                    "ParameterValue": "JSON"
+                },
+                {
+                    "ParameterName": "TYPEOFSERVICE",
+                    "ParameterValue": "ALLSERVICETYPES"
+                },
+                {
+                    "ParameterName": "TRADEDIRECTION",
+                    "ParameterValue": "IMPORTS"
+                }
+            ]
+        },
+        "Results": {
+            "TsLastUpdated": "2020-07-10 17:30:00.000",
+            "EarliestFullYear": "1999",
+            "LatestFullYear": "2019",
+            "Dimensions": [
+                {
+                    "Ordinal": "1",
+                    "Name": "TypeOfService",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "2",
+                    "Name": "TradeDirection",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "3",
+                    "Name": "Affiliation",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "4",
+                    "Name": "AreaOrCountry",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "5",
+                    "Name": "Year",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "6",
+                    "Name": "TimeSeriesId",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "7",
+                    "Name": "TimeSeriesDescription",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "8",
+                    "Name": "TimePeriod",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "9",
+                    "Name": "CL_UNIT",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "10",
+                    "Name": "UNIT_MULT",
+                    "DataType": "string",
+                    "IsValue": "0"
+                },
+                {
+                    "Ordinal": "11",
+                    "Name": "DataValue",
+                    "DataType": "numeric",
+                    "IsValue": "1"
+                }
+            ]
+        }
+    }
+}

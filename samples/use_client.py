@@ -101,14 +101,33 @@ bea_client = BureauEconomicAnalysisClient(api_key=API_KEY)
 # )
 # pprint(us_assets)
 
-# Data from Industry‐by‐Commodity Total Requirements, After Redefinitions (Sector Level) table for years 2010, 2011, and 2012.
-input_output_data = bea_client.input_output_statstics(
-    table_id=['56'],
-    year=['2010', '2011', '2012', '2013']
+# # Data from Industry‐by‐Commodity Total Requirements, After Redefinitions (Sector Level) table for years 2010, 2011, and 2012.
+# input_output_data = bea_client.input_output_statstics(
+#     table_id=['56'],
+#     year=['2010', '2011', '2012', '2013']
+# )
+# pprint(input_output_data)
+
+# # Quarterly Value Added by Industry data for all industries for years 2012 and 2013.
+# underlying_gdp_by_industry = bea_client.underlying_gdp_by_industry(
+#     industry='ALL',
+#     frequency=['A'],
+#     year=['2012', '2013'],
+#     table_id='ALL'
+# )
+# pprint(underlying_gdp_by_industry)
+
+# Imports of services from Germany for 2014 and 2015.
+international_trade_services = bea_client.international_trade_services(
+    type_of_service='AllServiceTypes',
+    trade_direction=['Imports'],
+    year=['2014', '2015'],
+    affiliation=['AllAffiliations'],
+    area_or_country=['Germany']
 )
-pprint(input_output_data)
+pprint(international_trade_services)
 
 save_response(
-    name='get_input_output_statistics',
-    data=input_output_data
+    name='get_international_trade_services',
+    data=international_trade_services
 )

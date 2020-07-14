@@ -11,6 +11,12 @@
 
 An Python API client used to pull and retrieve data from the US Bureau of Economic Analysis.
 
+## Grab an API Key
+
+To grab an API key, you'll need to setup an account with the Bureau Of Economic Analysis. Go to the
+[API Homepage](https://apps.bea.gov/API/signup/index.cfm) and fill out the register form on the left
+hand side. Once filled out an API key will be sent to your email.
+
 ## Setup
 
 Right now, the library is not hosted on **PyPi** so you will need to do a local install on your system if you plan
