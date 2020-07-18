@@ -26,7 +26,7 @@ First, clone this repo to your local system. After you clone the repo, make sure
 can install any dependencies you may need. To run the `setup.py` file, run the following command in your terminal.
 
 ```console
-pip install -e .
+pip install python-bea
 ```
 
 This will install all the dependencies listed in the `setup.py` file. Once done you can use the library
