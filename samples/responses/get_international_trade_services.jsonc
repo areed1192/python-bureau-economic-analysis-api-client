@@ -3,40 +3,40 @@
         "Request": {
             "RequestParam": [
                 {
-                    "ParameterName": "METHOD",
-                    "ParameterValue": "GETDATA"
-                },
-                {
-                    "ParameterName": "USERID",
-                    "ParameterValue": "YOUR_API_KEY"
-                },
-                {
-                    "ParameterName": "AFFILIATION",
-                    "ParameterValue": "ALLAFFILIATIONS"
-                },
-                {
                     "ParameterName": "DATASETNAME",
                     "ParameterValue": "INTLSERVTRADE"
                 },
                 {
-                    "ParameterName": "AREAORCOUNTRY",
-                    "ParameterValue": "GERMANY"
+                    "ParameterName": "YEAR",
+                    "ParameterValue": "ALL"
                 },
                 {
-                    "ParameterName": "YEAR",
-                    "ParameterValue": "2014,2015"
+                    "ParameterName": "TYPEOFSERVICE",
+                    "ParameterValue": "TELECOM"
+                },
+                {
+                    "ParameterName": "USERID",
+                    "ParameterValue": "385747B6-526F-443B-AB26-BE06C52B1AD3"
                 },
                 {
                     "ParameterName": "RESULTFORMAT",
                     "ParameterValue": "JSON"
                 },
                 {
-                    "ParameterName": "TYPEOFSERVICE",
-                    "ParameterValue": "ALLSERVICETYPES"
+                    "ParameterName": "AREAORCOUNTRY",
+                    "ParameterValue": "ALLCOUNTRIES"
+                },
+                {
+                    "ParameterName": "AFFILIATION",
+                    "ParameterValue": "USPARENTS"
+                },
+                {
+                    "ParameterName": "METHOD",
+                    "ParameterValue": "GETDATA"
                 },
                 {
                     "ParameterName": "TRADEDIRECTION",
-                    "ParameterValue": "IMPORTS"
+                    "ParameterValue": "EXPORTS"
                 }
             ]
         },
@@ -110,6 +110,312 @@
                     "Name": "DataValue",
                     "DataType": "numeric",
                     "IsValue": "1"
+                }
+            ],
+            "Data": [
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "1999",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "1999",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "n.a."
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2000",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2000",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "n.a."
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2001",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2001",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "n.a."
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2002",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2002",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "n.a."
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2003",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2003",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "n.a."
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2004",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2004",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "n.a."
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2005",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2005",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "n.a."
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2006",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2006",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "1296",
+                    "NoteRef": ""
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2007",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2007",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "(D)"
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2008",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2008",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "2670",
+                    "NoteRef": ""
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2009",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2009",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "3041",
+                    "NoteRef": ""
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2010",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2010",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "3862",
+                    "NoteRef": ""
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2011",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2011",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "(D)"
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2012",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2012",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "(D)"
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2013",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2013",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "7217",
+                    "NoteRef": ""
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2014",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2014",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "7110",
+                    "NoteRef": ""
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2015",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2015",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "(D)"
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2016",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2016",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "(D)"
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2017",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2017",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "6129",
+                    "NoteRef": ""
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2018",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2018",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "",
+                    "NoteRef": "(D)"
+                },
+                {
+                    "TypeOfService": "Telecom",
+                    "TradeDirection": "Exports",
+                    "Affiliation": "UsParents",
+                    "AreaOrCountry": "AllCountries",
+                    "Year": "2019",
+                    "TimeSeriesId": "TSI_IstTelecomExpAllCountriesUsPar_A",
+                    "TimeSeriesDescription": "Exports of telecommunications services; all countries; U.S. parents' exports to their foreign affiliates",
+                    "TimePeriod": "2019",
+                    "CL_UNIT": "USD",
+                    "UNIT_MULT": "6",
+                    "DataValue": "4614",
+                    "NoteRef": ""
+                }
+            ],
+            "Notes": [
+                {
+                    "NoteRef": "(D)",
+                    "NoteText": "Suppressed to avoid the disclosure of data of individual companies."
+                },
+                {
+                    "NoteRef": "n.a.",
+                    "NoteText": "Transactions are possible, but data are not available."
                 }
             ]
         }

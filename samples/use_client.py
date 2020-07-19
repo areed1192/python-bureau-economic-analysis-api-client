@@ -9,7 +9,6 @@ config = ConfigParser()
 config.read('configs/config.ini')
 API_KEY = config.get('alex_credentials', 'API_KEY')
 
-
 def save_response(name: str, data: dict) -> None:
     """Use this if you want to save the responses."""
 
@@ -117,13 +116,13 @@ underlying_gdp_by_industry = bea_client.underlying_gdp_by_industry(
 )
 pprint(underlying_gdp_by_industry)
 
-# Imports of services from Germany for 2014 and 2015.
+# Exports of telecommunications services by U.S. parents to their foreign affiliates for all years.
 international_trade_services = bea_client.international_trade_services(
-    type_of_service='AllServiceTypes',
-    trade_direction=['Imports'],
-    year=['2014', '2015'],
-    affiliation=['AllAffiliations'],
-    area_or_country=['Germany']
+    type_of_service='Telecom',
+    trade_direction=['Exports'],
+    year='ALL',
+    affiliation=['USPARENTS'],
+    area_or_country='AllCountries'
 )
 pprint(international_trade_services)
 
