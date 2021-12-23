@@ -999,3 +999,95 @@ class BureauEconomicAnalysisClient():
         )
 
         return response
+
+    def regional(
+        self,
+        table_name: str,
+        line_code: Union[int, str],
+        geo_fips: List[str] = 'ALL',
+        year: List[str] = 'ALL'
+    ) -> Dict:
+        """The Input‐Output Statistics are contained within a dataset called InputOutput.
+
+        ### Overview:
+        ----
+        The Regional dataset contains income and employment estimates from the Regional
+        Economic Accounts by state, county, and metropolitan area. All data accessible
+        through the Regional InteractiveTables on bea.gov are available through this
+        dataset. The Regional dataset replaces the RegionalIncome and RegionalProduct
+        datasets. Additional information may be found at http://apps.bea.gov/regional/pdf/RegionalApi.pd
+
+        ### Arguments:
+        ----
+        table_name (str):
+            TableName specifies a published table fromthe regional accounts.
+            Exactly one TableName must be provided.
+
+        line_code (Union[int, str]):
+            LineCode corresponds to the statistic in a table. It can either be
+            one value(ie.1,10,11), or 'ALL' to retrieve all the statistics for
+            one GeoFips.
+
+        geo_fips (List[str], optional, Default='ALL')
+            GeoFips specifies geography. It can be all states (STATE), all counties
+            (COUNTY), all Metropolitan Statistical Areas (MSA), all Micropolitan
+            Statistical Areas (MIC), all Metropolitan Divisions (DIV), all Combined
+            Statistical Areas (CSA), all metropolitan/nonmetropolitan portions
+            (PORT), or state post office abbreviation for all counties in one
+            state (e.g. NY).
+
+        year (List[str], optional, Default='ALL'):
+            Year is either a list of comma delimited years, LAST5, LAST10, or
+            ALL. Year will default to LAST5 years if the parameter is not
+            specified.
+
+        ### Returns:
+        ----
+        Dict:
+            A list of input and output statistics.
+
+        ### Example URL:
+        ----
+        ttps://apps.bea.gov/api/data/?UserID={API_KEY}&method=GetData&datasetname=Regional&TableName=CAINC1&LineCode=1&Year=2012,2013&GeoFips=COUNTY&ResultFormat=json
+
+
+        ### Usage:
+        ----
+            >>> # Initalize the new Client.
+            >>> bea_client = BureauEconomicAnalysisClient(api_key=API_KEY)
+
+            >>> # Personal income for 2012 and 2013 for all counties.
+            >>> regional_data = bea_client.regional(
+                table_name=['CAINC1'],
+                line_code=1,
+                geo_fips=['COUNTY'],
+                year=['2012', '2013']
+            )
+            >>> regional_data
+        """
+
+        if year != 'ALL':
+            year = ','.join(year)
+        
+        if geo_fips != 'ALL':
+            geo_fips = ','.join(geo_fips)
+
+        # Define the parameters.
+        params = {
+            'userid': self.api_key,
+            'method': 'GetData',
+            'datasetname': 'Regional',
+            'year': year,
+            'TableName': ','.join(table_name),
+            'GeoFips': geo_fips,
+            'LineCode': line_code,
+            'resultformat': self._format
+        }
+
+        # Make the request.
+        response = self._make_request(
+            method='get',
+            params=params
+        )
+
+        return response
