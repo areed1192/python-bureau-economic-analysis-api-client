@@ -1,5 +1,4 @@
 from typing import List
-from typing import Dict
 from typing import Union
 
 import requests
@@ -14,8 +13,20 @@ class BureauEconomicAnalysisClient:
     is used to access the different services.
     """
 
-    def __init__(self, api_key: str):
-        """Initalize the Bureau of Economic Analysis Client."""
+    def __init__(self, api_key: str) -> None:
+        """Initalize the Bureau of Economic Analysis Client.
+
+        ### Arguments:
+        ----
+        api_key (str):
+            Your Bureau of Economic Analysis API
+            Key.
+
+        ### Usage:
+        ----
+            >>> # Initalize the new Client.
+            >>> bea_client = BureauEconomicAnalysisClient(api_key=API_KEY)
+        """
 
         # base URL for the SEC EDGAR browser
         self.bea_url = "https://apps.bea.gov/api/data/"
@@ -33,7 +44,8 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        str: If `JSON`, then data from API request will be sent back
+        str:
+            If `JSON`, then data from API request will be sent back
             as JSON data. If `XML` then the data will be returned back
             as XML data.
         """
@@ -43,15 +55,17 @@ class BureauEconomicAnalysisClient:
     def format(self, value) -> None:
         """Used to return the Content format currently set for request.
 
-        ### Raises:
-        ----
-        ValueError: If the format is incorrect will raise a ValueError.
-
         ### Arguments:
         ----
-        value (str): If `JSON`, then data from API request will be sent back
+        value (str):
+            If `JSON`, then data from API request will be sent back
             as JSON data. If `XML` then the data will be returned back
             as XML data.
+
+        ### Raises:
+        ----
+        `ValueError`:
+            If the format is incorrect will raise a ValueError.
         """
 
         if value.upper() not in ["JSON", "XML"]:
@@ -69,24 +83,28 @@ class BureauEconomicAnalysisClient:
 
         return str_representation
 
-    def _make_request(self, method: str, params: Dict) -> Dict:
+    def _make_request(self, method: str, params: dict) -> Union[dict, str]:
         """Makes all the request for the BEA Client.
 
         ### Arguments:
         ----
-        method (str): The type of request to make. Can be one of the
+        method (str):
+            The type of request to make. Can be one of the
             following: ['get', 'post', 'put', 'delete', 'put']
 
-        params (Dict): Any parameters to send along with the request.
+        params (dict):
+            Any parameters to send along with the request.
 
         ### Raises:
         ----
-        requests.ConnectionError: If connection error occurs will raise
+        `requests.ConnectionError`:
+            If connection error occurs will raise
             an error.
 
         ### Returns:
         ----
-        Dict: The JSON or XML content.
+        Union[dict, str]:
+            The JSON or XML content.
         """
 
         # Define a new session.
@@ -108,24 +126,22 @@ class BureauEconomicAnalysisClient:
 
         # If the response is OK then return it.
         if response.ok and self._format == "JSON":
-            return response.json()
+            final_response = response.json()
         elif response.ok and self._format == "XML":
-            return response.text
+            final_response = response.text
         else:
             raise requests.ConnectionError()
 
-    def get_dataset_list(self) -> Dict:
+        return final_response
+
+    def get_dataset_list(self) -> dict:
         """Returns a list of all the datasets available from the API.
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A dictionary with a collection of datasets,
             their corresponding names, and their descriptions.
-
-        ### Example URL:
-        ----
-        https://apps.bea.gov/api/data/?UserID={YOUR_API_KEY}&method=GETDATASETLIST&ResultFormat=JSON
 
         ### Usage:
         ----
@@ -148,17 +164,15 @@ class BureauEconomicAnalysisClient:
 
         return response
 
-    def get_parameters_list(self, dataset_name: str) -> Dict:
-        """Retrieves a list of the parameters (required and optional) for a particular dataset.
+    def get_parameters_list(self, dataset_name: str) -> dict:
+        """Retrieves a list of the parameters (required and optional) for
+        a particular dataset.
 
         ### Returns:
         ----
-        Dict: A dictionary with a collection of datasets parameters, their corresponding names,
-            and their descriptions
-
-        ### Example URL:
-        ----
-        https://apps.bea.gov/api/data?&UserID={YOUR_API_KEY}&method=GETPARAMETERLIST&datasetname=Regional&ResultFormat=JSON
+        dict:
+            A dictionary with a collection of datasets parameters, their
+            corresponding names, and their descriptions
 
         ### Usage:
         ----
@@ -186,9 +200,9 @@ class BureauEconomicAnalysisClient:
         self,
         year: List[str] = "ALL",
         industry: List[str] = "ALL",
-        frequency: List[str] = ["A", "Q", "M"],
+        frequency: List[str] = "A,Q,M",
         table_id: List[str] = "ALL",
-    ) -> Dict:
+    ) -> dict:
         """Grabs the estimates of value added, gross output,
         intermediate inputs, KLEMS, and employment statistics by industry.
 
@@ -200,7 +214,7 @@ class BureauEconomicAnalysisClient:
         industry (List[str], optional, Default='ALL'):
             List of industries to retrieve (ALL for All). Defaults to 'ALL'.
 
-        frequency (str, optional, Default=["A","Q","M"]):
+        frequency (str, optional, Default="A,Q,M"):
             `Q` for Quarterly data or `A` for Annual,
             `A,Q` for both.
 
@@ -209,7 +223,8 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict: A list of GDP figures for the industry specified.
+        dict:
+            A list of GDP figures for the industry specified.
 
         ### Usage:
         ----
@@ -259,9 +274,9 @@ class BureauEconomicAnalysisClient:
         self,
         year: List[str] = "ALL",
         industry: List[str] = "ALL",
-        frequency: List[str] = ["A", "Q", "M"],
+        frequency: List[str] = "A,Q,M",
         table_id: List[str] = "ALL",
-    ) -> Dict:
+    ) -> dict:
         """The underlying gross domestic product by industry data are
         contained within a dataset called UnderlyingGDPbyIndustry.
 
@@ -283,7 +298,7 @@ class BureauEconomicAnalysisClient:
         industry (List[str], optional):
             List of industries to retrieve (ALL for All).
 
-        frequency (str, optional, Default=["A","Q","M"]):
+        frequency (str, optional, Default="A,Q,M"):
             `Q` for Quarterly data or `A` for Annual,
             `A,Q` for both.
 
@@ -292,7 +307,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of GDP figures for the industry specified.
 
         ### Usage:
@@ -338,7 +353,7 @@ class BureauEconomicAnalysisClient:
         affiliation: List[str] = "ALL",
         year: List[str] = "ALL",
         area_or_country: List[str] = "AllCountries",
-    ) -> Dict:
+    ) -> dict:
         """This dataset contains annual data on U.S. international trade in services.
 
         ### Overview:
@@ -360,20 +375,20 @@ class BureauEconomicAnalysisClient:
             The TradeDirection parameter specifies the trade direction of the services
             transactions. There are four valid parameter values other than “All”:
 
-                1. Exports – Exports
-                2. Imports – Imports
-                3. Balance – Balance (exports less imports)
-                4. SupplementalIns – Supplemental detail on insurance transactions.
+                1. Exports - Exports
+                2. Imports - Imports
+                3. Balance - Balance (exports less imports)
+                4. SupplementalIns - Supplemental detail on insurance transactions.
 
         affiliation (str, optional, Default='ALL'):
             The Affiliation parameter specifies the tradedirection for the services
             transactions. There are five valid parameter values other than “All”:
 
-                1. AllAffiliations – The total for all trade, whether affiliated or unaffiliated.
-                2. Unaffiliated – Unaffiliated trade.
-                3. Affiliated – Affiliated trade.
-                4. UsParents – U.S. parents’ trade with their foreign affiliates.
-                5. UsAffiliates – U.S. affiliates’ trade with their foreign parent groups.
+                1. AllAffiliations - The total for all trade, whether affiliated or unaffiliated.
+                2. Unaffiliated - Unaffiliated trade.
+                3. Affiliated - Affiliated trade.
+                4. UsParents - U.S. parents' trade with their foreign affiliates.
+                5. UsAffiliates - U.S. affiliates' trade with their foreign parent groups.
 
         year (List[str], optional, Default='ALL'):
             List of year(s) of data to retrieve (ALL for All).
@@ -389,7 +404,8 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict: A list of international trade services.
+        dict:
+            A list of international trade services.
 
         ### Usage:
         ----
@@ -435,8 +451,8 @@ class BureauEconomicAnalysisClient:
         self,
         table_name: str,
         year: List[str] = "ALL",
-        frequency: List[str] = ["A", "Q", "M"],
-    ) -> Dict:
+        frequency: List[str] = "A,Q,M",
+    ) -> dict:
         """Grabs the data from the National Income and Product Accounts.
 
         ### Overview:
@@ -455,7 +471,7 @@ class BureauEconomicAnalysisClient:
         industry (List[str], optional, Default='ALL'):
             List of industries to retrieve (ALL for All).
 
-        frequency (str, optional, Default=["A","Q","M"]):
+        frequency (str, optional, Default="A,Q,M"):
             `Q` for Quarterly data or `A` for Annual, `M` for
             monthly.
 
@@ -464,7 +480,8 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict: A list of GDP figures for the industry specified.
+        dict:
+            A list of GDP figures for the industry specified.
 
         ### Usage:
         ----
@@ -509,8 +526,8 @@ class BureauEconomicAnalysisClient:
         self,
         table_name: List[str] = "ALL",
         year: List[str] = "ALL",
-        frequency: List[str] = ["A", "Q", "M"],
-    ) -> Dict:
+        frequency: List[str] = "A,Q,M",
+    ) -> dict:
         """This dataset contains underlying detail data from the
         National Income and Product Accounts.
 
@@ -529,7 +546,7 @@ class BureauEconomicAnalysisClient:
         industry (List[str], optional, Default='ALL'):
             List of industries to retrieve (ALL for All).
 
-        frequency (str, optional, Default=["A","Q","M"]):
+        frequency (str, optional, Default="A,Q,M"):
             `Q` for Quarterly data or `A` for Annual, "M" for monthly.
 
         table_id (List[str], optional, Default='ALL'):
@@ -537,7 +554,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of GDP figures for the industry specified.
 
         ### Usage:
@@ -581,10 +598,8 @@ class BureauEconomicAnalysisClient:
         return response
 
     def fixed_assets(
-        self,
-        table_name: List[str] = 'ALL',
-        year: List[str] = 'ALL'
-    ) -> Dict:
+        self, table_name: List[str] = "ALL", year: List[str] = "ALL"
+    ) -> dict:
         """This dataset contains data from the standard set of Fixed Assets
         tables as published online.
 
@@ -598,7 +613,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of GDP figures for the industry specified.
 
         ### Usage:
@@ -645,7 +660,7 @@ class BureauEconomicAnalysisClient:
         country: List[str] = "ALL",
         industry: List[str] = "ALL",
         footnotes: bool = True,
-    ) -> Dict:
+    ) -> dict:
         """Grabs one of two datasets from the Direct Investment
         and Multinational Enterprises dataset.
 
@@ -684,7 +699,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of investment data.
 
         ### Usage:
@@ -752,7 +767,7 @@ class BureauEconomicAnalysisClient:
         country: List[str] = "ALL",
         industry: List[str] = "ALL",
         footnotes: bool = True,
-    ) -> Dict:
+    ) -> dict:
         """Grabs one of two datasets from the Direct Investment and
         Multinational Enterprises dataset.
 
@@ -802,7 +817,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of investment data.
 
         ### Usage:
@@ -874,7 +889,7 @@ class BureauEconomicAnalysisClient:
         area_or_country: str = "AllCountries",
         year: List[str] = "ALL",
         frequency: str = "ALL",
-    ) -> Dict:
+    ) -> dict:
         """This dataset contains data on U. S. international transactions.
 
         ### Overview:
@@ -900,7 +915,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of transaction data.
 
         ### Usage:
@@ -950,7 +965,7 @@ class BureauEconomicAnalysisClient:
         component: str = "ALL",
         year: List[str] = "ALL",
         frequency: str = "ALL",
-    ) -> Dict:
+    ) -> dict:
         """This dataset contains data on the U. S. international investment position.
 
         ### Overview:
@@ -975,7 +990,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of transaction data.
 
         ### Usage:
@@ -1025,10 +1040,8 @@ class BureauEconomicAnalysisClient:
         return response
 
     def input_output_statstics(
-        self,
-        table_id: List[str],
-        year: List[str] = "ALL"
-    ) -> Dict:
+        self, table_id: List[str], year: List[str] = "ALL"
+    ) -> dict:
         """The Input‐Output Statistics are contained within a dataset
         called InputOutput.
 
@@ -1052,7 +1065,8 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict: A list of input and output statistics.
+        dict:
+            A list of input and output statistics.
 
         ### Usage:
         ----
@@ -1093,8 +1107,9 @@ class BureauEconomicAnalysisClient:
         line_code: Union[int, str],
         geo_fips: List[str] = "ALL",
         year: List[str] = "ALL",
-    ) -> Dict:
-        """The Input‐Output Statistics are contained within a dataset called InputOutput.
+    ) -> dict:
+        """The Input‐Output Statistics are contained within a dataset
+        called InputOutput.
 
         ### Overview:
         ----
@@ -1131,7 +1146,7 @@ class BureauEconomicAnalysisClient:
 
         ### Returns:
         ----
-        Dict:
+        dict:
             A list of input and output statistics.
 
         ### Usage:

@@ -1,6 +1,7 @@
-from setuptools import setup, find_packages
+from setuptools import setup
+from setuptools import find_packages
 
-with open("README.md", "r") as fh:
+with open(file="README.md", mode="r", encoding="utf=8") as fh:
     long_description = fh.read()
 
 setup(
@@ -58,6 +59,6 @@ setup(
         'Programming Language :: Python :: 3'
     ],
 
-    # you will need python 3.7 to use this libary.
-    python_requires='>3.6'
+    # you will need python 3.8 to use this libary.
+    python_requires='>3.8'
 )
