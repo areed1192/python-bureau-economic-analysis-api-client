@@ -12,7 +12,11 @@ API_KEY = config.get("alex_credentials", "API_KEY")
 def save_response(name: str, data: dict) -> None:
     """Use this if you want to save the responses."""
 
-    with open(file="samples/responses/{name}.jsonc".format(name=name), mode="w+", encoding='utf-8') as sample_file:
+    with open(
+        file=f"samples/responses/{name}.jsonc",
+        mode="w+",
+        encoding="utf-8",
+    ) as sample_file:
         json.dump(obj=data, fp=sample_file, indent=4)
 
 
@@ -84,7 +88,7 @@ balance_on_goods = bea_client.international_transactions(
 )
 pprint(balance_on_goods)
 
-# U.S. assets excluding financial derivatives; change in position 
+# U.S. assets excluding financial derivatives; change in position
 # attributable to price changes for all available years
 us_assets = bea_client.international_investments_positions(
     type_of_investment=["FinAssetsExclFinDeriv"],
@@ -121,13 +125,10 @@ save_response(
     name="get_international_trade_services", data=international_trade_services
 )
 
- # Personal income for 2012 and 2013 for all counties.
+# Personal income for 2012 and 2013 for all counties.
 regional_data = bea_client.regional(
-    table_name=["CAINC1"],
-    line_code=1,
-    geo_fips=["COUNTY"],
-    year=["2012", "2013"]
+    table_name=["CAINC1"], line_code=1, geo_fips=["COUNTY"], year=["2012", "2013"]
 )
-
 pprint(regional_data)
+
 save_response(name="get_regional_data", data=regional_data)
